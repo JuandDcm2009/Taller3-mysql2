@@ -16,6 +16,8 @@
         GRANT ALL PRIVILEGES ON ecommerce_shoes.* TO 'administrador'@'%' WITH GRANT OPTION;
 
         SHOW GRANTS FOR 'administrador'@'%'; 
+
+        ALTER USER 'administrador'@'%' WITH MAX_QUERIES_PER_HOUR 50;
         `
 
 - #### Cajero
@@ -29,6 +31,8 @@
         GRANT SELECT ON ecommerce_shoes.Usuarios, ecommerce_shoes.Productos TO 'cajero'@'%';
 
         SHOW GRANTS FOR 'cajero'@'%';
+
+        ALTER USER 'Cajero'@'%' WITH MAX_QUERIES_PER_HOUR 50;
         `
 
 - #### Analista
@@ -42,6 +46,8 @@
         GRANT SHOW VIEW ON ecommerce_shoes.* TO 'analista'@'%';
 
         SHOW GRANTS FOR 'analista'@'%';
+
+        ALTER USER 'analista'@'%' WITH MAX_QUERIES_PER_HOUR 50;
         `
 - #### Desarrollador
         `
